@@ -1,0 +1,46 @@
+/* Colours are already defined. Use them with var(...) */
+:root {
+  --brand: #4f46e5;
+  --ink: #1f2937;
+  --soft: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--ink);
+}
+
+.page {
+  padding: 24px;
+}
+
+/* TODO (Task 3b): style the navbar, the card row and the cards as described in the brief */
+
+/* Existing rule: it greys every paragraph inside a card */
+.card p {
+  color: var(--soft);
+}
+
+/* TODO (Task 3b): make the members line brand-coloured (without !important) */
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter {
+  padding: 6px 14px;
+  border: 1px solid var(--soft);
+  background: #ffffff;
+}
+
+.filter.active {
+  background: var(--brand);
+  color: #ffffff;
+}
